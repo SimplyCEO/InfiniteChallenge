@@ -26,4 +26,5 @@ summon minecraft:item ~2 ~-1 ~ {Item:{id:"minecraft:written_book",Count:1b,tag:{
 
 # Chamber spawn position
 summon minecraft:item_frame ~ ~-1 ~ {Facing:1b,Invulnerable:1b,Invisible:1b,Tags:["IC_spawn"],Fixed:1b}
+execute positioned ~ ~-1 ~ run setworldspawn
 

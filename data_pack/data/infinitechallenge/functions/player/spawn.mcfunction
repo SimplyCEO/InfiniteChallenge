@@ -12,8 +12,5 @@ tp @s ~ ~ ~
 # Create chamber
 execute unless entity @e[type=minecraft:item_frame,tag=!IC_spawn] run function infinitechallenge:spawn/create
 
-# Temporary player spawn
-spawnpoint @s ~ ~ ~
-
 tag @s add IC_player_visit
 
