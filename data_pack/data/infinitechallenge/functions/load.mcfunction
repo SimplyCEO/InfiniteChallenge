@@ -6,5 +6,10 @@
 #
 # Thanks for playing!
 
+scoreboard objectives add dimension_id dummy ["Dimension ID"]
+#scoreboard players set dimension.the_nether dimension_id -1
+#scoreboard players set dimension.overworld dimension_id 0
+#scoreboard players set dimension.the_end dimension_id 1
+
 function infinitechallenge:main
 

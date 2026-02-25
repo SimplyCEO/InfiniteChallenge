@@ -7,8 +7,10 @@
 # Thanks for playing!
 
 # Prevent the player from going outside the dimension hub
-execute as @p[distance=7..,nbt={Dimension:0}] run tp @s ~ ~0.5 ~
+execute as @p[distance=7..] if score @s dimension_id matches 0 run tp @s ~ ~0.5 ~
+
+execute as @p[distance=..3] if score @s dimension_id matches 0 run tag @s remove dimension.in_unknown_dimension
 
 # Prevent the player from going to the Nether
-execute as @p[nbt={Dimension:-1}] run tp @s ~ ~0.5 ~
+execute as @p if score @s dimension_id matches -1 run tp @s ~ ~0.5 ~
 
