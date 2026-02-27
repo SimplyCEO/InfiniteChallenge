@@ -12,5 +12,5 @@ execute store result score @s pos_z run data get entity @s Pos[2]
 execute store result score @s dimension_id run data get entity @s Dimension
 
 # Avoid player falling into void in overworld
-execute unlesss entity @e[type=minecraft:item_frame,tag=IC_spawn] if entity @s[nbt={Dimension:0}] unless score @s pos_y matches 1..10 run tag @s remove IC_player_visit
+execute unless entity @e[type=minecraft:item_frame,tag=IC_spawn] if entity @s[nbt={Dimension:0}] unless score @s pos_y matches 1..10 run tag @s remove IC_player_visit
 
