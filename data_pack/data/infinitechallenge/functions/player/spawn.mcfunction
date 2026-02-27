@@ -7,14 +7,8 @@
 # Thanks for playing!
 
 # Teleport player to load chunks
-gamemode creative @s
 tp @s ~ ~ ~
-gamemode spectator @s
 
 # Create chamber
 execute unless entity @e[type=minecraft:item_frame,tag=!IC_spawn] run function infinitechallenge:spawn/create
-
-tag @s add IC_player_visit
-
-gamemode survival @s
 

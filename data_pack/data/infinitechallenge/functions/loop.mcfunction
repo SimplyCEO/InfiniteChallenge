@@ -7,7 +7,7 @@
 # Thanks for playing!
 
 # Set player data
-execute as @p run function infinitechallenge:player/update_data
+execute as @p at @s run function infinitechallenge:player/update_data
 
 # Avoid player from going outbounds
 execute at @e[type=minecraft:item_frame,tag=IC_spawn] run function infinitechallenge:spawn/main
