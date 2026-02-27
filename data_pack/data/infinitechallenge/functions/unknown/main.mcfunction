@@ -6,5 +6,5 @@
 #
 # Thanks for playing!
 
-execute if entity @p[distance=49..,sort=nearest] run setblock ~ ~1 ~ air destroy
+execute if entity @p[distance=49..,sort=nearest] run setblock ~ ~ ~ air destroy
 
